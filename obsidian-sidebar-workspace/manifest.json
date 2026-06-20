@@ -1,0 +1,9 @@
+{
+  "id": "sidebar-workspace",
+  "name": "工作区",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "右侧边栏工作区，内置翻译助手（英语/葡语→中文），支持扩展更多功能模块",
+  "author": "kelei",
+  "isDesktopOnly": true
+}
