@@ -50,6 +50,28 @@
   white-space: nowrap;
 }
 
+.translator-format-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.translator-format-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.translator-format-select {
+  flex: 1;
+  padding: 2px 4px;
+  border-radius: 3px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
 .translator-input {
   width: 100%;
   padding: 6px 8px;
@@ -118,6 +140,54 @@
   padding: 6px 8px;
   border-radius: 4px;
   background: var(--background-secondary);
+}
+
+/* ---- Pending Result (confirm or discard) ---- */
+
+.translator-result-pending {
+  background: var(--background-primary-alt) !important;
+  border: 1px solid var(--interactive-accent);
+  outline: none;
+}
+
+.pending-original {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px dashed var(--background-modifier-border);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.pending-translated {
+  font-size: 13px;
+  color: var(--text-accent);
+  background: rgba(var(--interactive-accent-rgb), 0.08);
+  padding: 4px 6px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.pending-match {
+  font-size: 10px;
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+.translator-result-hint {
+  font-size: 11px;
+  color: var(--text-accent);
+  text-align: center;
+  padding: 4px 0 0;
+  animation: hint-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes hint-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
 /* ---- Divider ---- */
