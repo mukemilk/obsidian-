@@ -1,7 +1,7 @@
 [README.md](https://github.com/user-attachments/files/29163181/README.md)
 # Obsidian Sidebar Workspace
 
-Obsidian 右侧边栏工作区插件，内置翻译助手（英语/葡萄牙语 → 中文），支持扩展更多功能模块。
+Obsidian 右侧边栏工作区插件，内置翻译助手（英语/葡萄牙语/中文，三语互译），支持一键生成callout笔记。
 
 ## 功能
 
